@@ -1,5 +1,5 @@
 <template> 
-    <div class="relative z-10 bg-white flex justify-between items-center lg:block" :class="{'shadow': !isDropDown}">
+    <div class=" z-10 bg-white flex justify-between items-center lg:block sticky" :class="{'shadow': !isDropDown}">
         <div class="py-4 px-5 lg:px-20 border-r lg:border-none flex justify-between items-center gap-24 md:flex-grow lg:justify-around lg:gap-0  text-slate-700">
             <div class="">
                 <router-link :to="{'name': 'home'}">
