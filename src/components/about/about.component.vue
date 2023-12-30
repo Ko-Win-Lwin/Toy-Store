@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col justify-center items-center gap-5 text-white py-32 px-48 text-center">
+    <div class="flex flex-col justify-center items-center gap-5 text-white py-16  lg:py-32 lg:px-48 text-center">
         <p class="text-sm">About the shop</p>
-        <h2 class="text-4xl">Watch Our Story</h2>
-        <p>There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad placement, demographic, even the consumer’s mood.</p>
+        <h2 class="text-4xl px-16 md:px-0">Watch Our Story</h2>
+        <p class="px-8 md:px-16 md:text-sm lg:px-0">There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad placement, demographic, even the consumer’s mood.</p>
 
         <div class="group hover:scale-110 duration-100" @click="toggleModal">
             <div class="w-[75px] h-[75px] rounded-full bg-lime-500 grid place-items-center">

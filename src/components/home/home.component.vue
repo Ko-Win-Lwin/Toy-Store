@@ -39,10 +39,11 @@
     <div class="deer-image">
         <About/>
     </div>
-    
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</template>
+    <div>
+      <Footer/>
+    </div>
+  </template>
 
 <script setup>
 import WelcomeBox from './welcome-box.component.vue';
@@ -50,6 +51,8 @@ import ShopNowBtn from "../btns/shop-now-btn.component.vue"
 import StuffedAnimals from '../catelog/stuffed-animals.component.vue';
 import WoodenToys from '../catelog/wooden-toys.component.vue';
 import About from '../about/about.component.vue';
+import Footer from "../footer/footer.component.vue"
+
 import router from '@/router';
 
 const gotoCatelogPage = () => {
