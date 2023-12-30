@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/components/home/home.component.vue'
 import Catelog from '@/components/catelog/catelog.component.vue'
 import Delivery from '@/components/delivery/delivery.component.vue'
-import About from '@/components/about/about.component.vue'
+import About from '@/components/about/about-us.component.vue'
 import Contacts from '@/components/contacts/contacts.component.vue'
 import Cart from '@/components/cart/cart.component.vue'
 

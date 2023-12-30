@@ -1,3 +1,10 @@
 <template>
-    <h1>This is Delivery component.</h1>
+    <Breadcrumb :route="route"/>
 </template>
+
+<script setup>
+import { useRoute } from 'vue-router';
+import Breadcrumb from '../navigation/breadcrumb.component.vue';
+
+const route = useRoute()
+</script>
