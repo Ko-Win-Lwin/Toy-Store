@@ -17,7 +17,7 @@
                 <i class="fa-solid fa-xmark text-white text-3xl"></i>
             </div>
             
-            <iframe width="600" height="400" src="https://www.youtube.com/embed/nhBVL41-_Cw?si=KA1IH7TUY02xg0cz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            <iframe class="w-[100%] h-[30%] lg:h-[40%] lg:w-[60%]" src="https://www.youtube.com/embed/nhBVL41-_Cw?si=KA1IH7TUY02xg0cz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </div>
     </Teleport>
