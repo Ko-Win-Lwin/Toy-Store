@@ -7,7 +7,7 @@
             </router-link>
         </div>
         <div class="navigation-links flex justify-start gap-5 lg:gap-8 items-center text-sm lg:text-base">
-            <router-link :to="{'home': 'home'}">
+            <router-link :to="{'name': 'home'}">
                 <div class="hover:underline">Home</div>
             </router-link>
             <router-link :to="{'name': 'catelog'}">

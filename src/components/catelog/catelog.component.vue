@@ -2,20 +2,20 @@
     <Breadcrumb  :route="route"/>
     <div class="mt-20 px-5 lg:px-16 mb-10">
         <div class="flex justify-between items-center">
-            <h1 class="text-2xl lg:text-3xl">All Toys</h1>
-            <div class="cursor-pointer flex gap-8 justify-center items-center text-sm" @click="gotoCatelogPage">
-                <span class="py-2 px-3" :class="{'bg-lime-500 rounded-[20px]' : isAllToys}" @click="chooseCategory('all')">All Toys</span>
-                <span class="py-2 px-3" :class="{'bg-lime-500 rounded-[20px]' : isWoodenToys}" @click="chooseCategory('wooden')">Wooden Toys</span>
-                <span class="py-2 px-3" :class="{'bg-lime-500 rounded-[20px]' : isStuffedAnimals}" @click="chooseCategory('stuffed')">Stuffed Animals</span>
+            <h1 class="hidden md:block text-2xl lg:text-3xl">All Toys</h1>
+            <div class="cursor-pointer w-full md:w-auto flex flex-col md:flex-row gap-4 lg:gap-8 justify-center items-center text-[12px] md:text-sm" @click="gotoCatelogPage">
+                <span class="px-3 py-1 lg:py-2 lg:px-3" :class="{'bg-lime-500 rounded-[20px] text-white' : isAllToys}" @click="chooseCategory('all')">All Toys</span>
+                <span class="px-3 py-1 lg:py-2 lg:px-3" :class="{'bg-lime-500 rounded-[20px] text-white' : isWoodenToys}" @click="chooseCategory('wooden')">Wooden Toys</span>
+                <span class="px-3 py-1 lg:py-2 lg:px-3" :class="{'bg-lime-500 rounded-[20px] text-white' : isStuffedAnimals}" @click="chooseCategory('stuffed')">Stuffed Animals</span>
             </div>
         </div>
         
         <div class="w-full mt-8 bg-gray-200 rounded-full h-[2px] lg:h-[1.5px]">
-            <div class="bg-lime-500 h-[2px] lg:h-[1.5px] rounded" style="width: 15%" />
+            <div class="lg:bg-lime-500 h-[2px] lg:h-[1.5px] rounded" style="width: 15%" />
         </div>
 
         <div class="all_toys">
-            <div v-if="isAllToys" class="grid grid-col-1 lg:grid-cols-4 md:grid-col2">
+            <div v-if="isAllToys" class="grid md:gap-x-12 grid-col-1 lg:grid-cols-4 md:grid-cols-2">
                 <div v-for="toy in allToys" :key="toy" class="">
                    <ItemCard>
                     <template #product_image>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="stuffed">
-            <div v-if="isStuffedAnimals" class="grid grid-col-1 lg:grid-cols-4 md:grid-col2">
+            <div v-if="isStuffedAnimals" class="grid md:gap-x-12 grid-col-1 lg:grid-cols-4 md:grid-cols-2">
                 <div v-for="toy in stuffedAnimals" :key="toy" class="">
                    <ItemCard>
                     <template #product_image>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="wooden">
-            <div v-if="isWoodenToys" class="grid grid-col-1 lg:grid-cols-4 md:grid-col2">
+            <div v-if="isWoodenToys" class="grid md:gap-x-12 grid-col-1 lg:grid-cols-4 md:grid-cols-2">
                 <div v-for="toy in woodenToys" :key="toy" class="">
                    <ItemCard>
                     <template #product_image>

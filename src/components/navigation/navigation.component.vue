@@ -1,7 +1,7 @@
 <template> 
     <div class=" z-30 bg-white flex justify-between items-center lg:block relative md:sticky md:top-0" :class="{'shadow': !isDropDown}">
         <div class="py-4 px-5 lg:px-16 border-r lg:border-none flex justify-between items-center gap-24 md:flex-grow lg:justify-around lg:gap-0  text-slate-700">
-            <div class="">
+            <div class="" @click="hideDropDown">
                 <router-link :to="{'name': 'home'}">
                     <h1 class="text-2xl text-slate-700">ToyStore</h1>
                 </router-link>
