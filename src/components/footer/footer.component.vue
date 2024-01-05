@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-lime-500 lg:pt-12 lg:pb-6 text-white lg:px-12 fixed w-full bottom-0">
-    <div class="flex justify-between items-center">
-        <div>
+  <div class="bg-lime-500 pt-8 pb-4 md:pt-12 md:pb-6 px-4 lg:pt-12 lg:pb-6 text-white lg:px-12 ">
+    <div class="flex flex-col md:flex-row md:flex-wrap  lg:justify-between md:items-center gap-6">
+        <div class="grow lg:grow-0 md:mr-[30%] lg:mr-auto">
             <router-link :to="{'name': 'home'}">
-                <h1 class="text-2xl">ToyStore</h1>
+                <h1 class="text-2xl lg:text-3xl">ToyStore</h1>
             </router-link>
         </div>
-        <div class="navigation-links hidden justify-start items-center text-sm gap-10 lg:flex">
-            <router-link :to="{'home': 'home'}">
+        <div class="navigation-links flex justify-start gap-5 lg:gap-8 items-center text-sm lg:text-base">
+            <router-link :to="{'name': 'home'}">
                 <div class="hover:underline">Home</div>
             </router-link>
             <router-link :to="{'name': 'catelog'}">
@@ -23,7 +23,7 @@
                 <div class="hover:underline">Contacts</div>
             </router-link>
         </div>
-        <div class="social-links flex justify-items-center items-center gap-3">
+        <div class="social-links flex justify-items-center items-center gap-3 md:ml-auto">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -32,9 +32,9 @@
         </div>
     </div>
 
-    <div class="w-full mt-12 bg-gray-200 rounded-full h-[0.9px] opacity-75" />
+    <div class="w-full mt-12 bg-gray-200 rounded-full h-[1px] opacity-75" />
 
-    <div class="mt-6 text-[12px]">
+    <div class="mt-2 text-[11px]">
         <p>
             Created with love by <a href="http://www.google.com" target="_blank">Win Lwin</a>
         </p>
